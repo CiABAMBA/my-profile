@@ -58,7 +58,7 @@ body {
 
 .flex-child {
     flex: 1;
-	min-width: 200px;
+	min-width: 230px;
 }
 
 .flex-child:first-child {
@@ -112,35 +112,25 @@ h2 {
 	width: 100%;
 }
 
-.interest1 {
+.interest1, .interest2, .interest3 {
 	color: transparent;
 	transition: color 0.5s ease; 
+}
+
+.interest1 {	
 	background-image: url("images/videogame.jpg");
 }
 
-.interest1:hover {
-	color: rgb(50, 50, 50);
-	background-image: none;
-}
-
 .interest2 {
-	color: transparent;
-	transition: color 0.5s ease; 
 	background-image: url("images/tv.jpg");
 }
 
-.interest2:hover {
-	color: rgb(50, 50, 50);
-	background-image: none;
-}
 
 .interest3 {
-	color: transparent;
-	transition: color 0.5s ease; 
 	background-image: url("images/drugs.jpg");
 }
 
-.interest3:hover {
+.interest1:hover, .interest2:hover, .interest3:hover {
 	color: rgb(50, 50, 50);
 	background-image: none;
 }
@@ -158,6 +148,8 @@ h2 {
 #profile {
 	border: white solid 0px;
 	margin: 40px auto auto;
+	max-width:  200px; 
+	height: auto;
 }
 
 .shadow-1{
@@ -195,5 +187,22 @@ h2 {
 	}
 	.interest1:hover, .interest2:hover, .interest3:hover {
 		color: lightgray;
+	}
+}
+
+@media screen and (min-resolution:3dppx) {
+	.flex-container {
+		flex-direction: column;
+	}
+	body {
+		font-size: 18px
+	}
+	.button-green {
+	background-color: #009788;
+	width: auto;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 18px;
+	margin: auto
 	}
 }
