@@ -1,0 +1,199 @@
+a {
+	text-decoration: none;
+	color: white;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: orange;
+  	text-decoration: none;
+}
+
+body {
+	background: rgb(240, 240, 240);
+	color: rgb(50, 50, 50);
+	font-family: 'Roboto', sans-serif;
+	font-size:  16;
+}
+
+.button-green {
+	background-color: #009788;
+	width: 120px;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 18px;
+	margin: auto
+}
+
+.card-footer {
+	margin: -30px -30px -30px;
+	padding: 20px 30px 30px;
+	background-color: white;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.card-white {
+	background: white;
+	border: 0 solid black;
+	margin: 20px;
+	padding: 30px;
+	border-radius: 5px;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 40px auto;
+}
+
+.flex-container {
+    display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-child {
+    flex: 1;
+	min-width: 200px;
+}
+
+.flex-child:first-child {
+}
+
+#footer {
+	background-color: transparent
+}
+
+h1, h2, h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+h1 {
+	color: white;
+	font-size: 40px;
+	font-weight: 200;
+	text-transform: capitalize;
+	margin: auto auto 50px auto
+}
+
+h2 {
+	font-size: 18px;
+}
+
+.icon {
+	font-size: 30px;
+	color: lightslategray;
+}
+
+.icon:hover {
+	color: #009788
+}
+
+.img-background {
+	background-size: cover;
+	background-position: center;
+}
+
+#img-background-cover {
+	background-image: url("images/cover_3.jpg");
+}
+
+.img-circle {
+	border-radius: 50%;
+}
+
+.img_fill {
+	width: 100%;
+}
+
+.interest1 {
+	color: transparent;
+	transition: color 0.5s ease; 
+	background-image: url("images/videogame.jpg");
+}
+
+.interest1:hover {
+	color: rgb(50, 50, 50);
+	background-image: none;
+}
+
+.interest2 {
+	color: transparent;
+	transition: color 0.5s ease; 
+	background-image: url("images/tv.jpg");
+}
+
+.interest2:hover {
+	color: rgb(50, 50, 50);
+	background-image: none;
+}
+
+.interest3 {
+	color: transparent;
+	transition: color 0.5s ease; 
+	background-image: url("images/drugs.jpg");
+}
+
+.interest3:hover {
+	color: rgb(50, 50, 50);
+	background-image: none;
+}
+
+.list-inline {
+ 	list-style: none;
+ 	padding-left: 0px;
+}
+
+.list-inline > li {
+  display: inline;
+  padding: 0px 20px;
+}
+
+#profile {
+	border: white solid 0px;
+	margin: 40px auto auto;
+}
+
+.shadow-1{
+	box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.shadow-2{
+	box-shadow: 0px 0px 25px rgba(0,0,0,0.2);
+}
+
+.text-center {
+	text-align: center
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #1a1c1d;
+		color: lightgray;
+	}
+	.card-white {
+		background-color: #141616;
+	}
+	.card-footer{
+		background-color: #141616;
+	}
+	.icon {
+		color: lightgray;
+	}
+	.icon:hover {
+		color: #009788;
+	}
+	.interest1:hover, .interest2:hover, .interest3:hover {
+		color: lightgray;
+	}
+}
